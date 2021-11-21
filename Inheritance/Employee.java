@@ -2,8 +2,8 @@ package Inheritance;
 
  class Employee {
 
-  String name;
-  int salary; 
+  String name="xyz";
+  double salary=1500.254;
   public String getName() {
    return name;
   }
@@ -12,7 +12,7 @@ package Inheritance;
    this.name = name;
   }
 
-  public int getSalary() {
+  public double getSalary() {
    return salary;
   }
 
@@ -20,7 +20,17 @@ package Inheritance;
    this.salary = salary;
   }
 
+}
+class Manager extends Employee{  //manager extends employee is single level inheritance
 
+  String department;
+  String address;
 
+}
+class Developer extends Employee{   //manager and developer extends employee is Hierarchical inheritance
+
+}
+
+class HR extends Manager{    //manager extends employee and HR extends manager  is Multi level inheritance
 
 }
